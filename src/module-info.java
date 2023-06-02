@@ -6,4 +6,5 @@
  *
  */
 module TesteVCX_JoaoDarwin {
+	requires org.apache.pdfbox;
 }
