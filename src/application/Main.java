@@ -27,7 +27,7 @@ public class Main {
 				documento = PDDocument.load(oldFile);
 				controler = false;
 			} catch (FileNotFoundException e) {
-				System.out.println("PDF não encontrado! Informe novamento.");
+				System.out.println("PDF não encontrado! Informe novamente.");
 				scanner.nextLine();
 				scanner.nextLine();
 			}
