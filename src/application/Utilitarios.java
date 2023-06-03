@@ -7,13 +7,28 @@ import application.entities.ContaDebitada;
 import application.entities.Documento;
 import application.entities.Pagamento;
 
+/**
+* <h1>Utilitarios</h1>
+* Contem métodos importantes para o funcionamento do projeto
+* <p>
+*
+* @author  João darwin
+*/
 public class Utilitarios {
 
+	/**
+	   * Este método é usado para limpar a tela do terminal.
+	   * @return void, a tela é limpada
+	   */
 	public static void clearScreen() {
 		System.out.print("\033[H\033[2J");
 		System.out.flush();
 	}
 	
+	/**
+	   * Este método é usado para imprimir na tela do terminal um menu com opções de execução que o programa pode fazer.
+	   * @return void, imprime na tela do terminal uma menu
+	   */
 	public static void imprimirMenu() {
 		System.out.println("[0] - Mostrar todas as informações");
 		System.out.println("[1] - Info. Conta Debitada");
@@ -22,12 +37,21 @@ public class Utilitarios {
 		System.out.print("Opção: ");
 	}
 	
-	// Cria uma obj Documento vazio.
+	/**
+	   * Este método cria uma Documento vazio, usado no começo do programa.
+	   * @return Documento, documento vazio
+	   */
 	public static Documento createDocumento() {
 		return new Documento("", new ContaDebitada("", "", ""), new Pagamento("", 0, ""), "10/10/2010");
 	}
 	
-	// Método que recebe uma linha de um documento pdf, verifica se a linha tem informações importantes, se tiver altera no Obj Doc.
+	/**
+	   * Este método é usado para alterar informaçoes no documento que acabou de ser criado. Essas informações foram baseadas em uma array de strings que ele recebe
+	   * O foreach dentro desse array a cada nova volta verifica se a linha contem determinada informação, caso sim, usamos o método find para pegar o valor dessa informação e atualizar no Documento doc.
+	   * @param linhas, é uma array de Strings
+	   * @param doc, Documento onde serão processadas as informações.
+	   * @return void, o Documento doc é alterado em memória usando os sets do obj
+	   */
 	public static void loadInformations(String[] linhas, Documento doc) {
 		for(String linha : linhas) {
 			if(linha.contains("Identificação no extrato:")) {
@@ -58,6 +82,13 @@ public class Utilitarios {
 		}
 	}
 	
+	/**
+	   * Este método é usado para encontrar determinada valor de uma determinada sentença.
+	   * @param text, é a string completa onde temos vários valores
+	   * @param find, é o valor que queremos encontrar
+	   * Ex: text == "Conta: xxxx Agencia: yyy" e find == "Conta:" o retorno deve ser "xxxx"
+	   * @return String, o valor retornado é o valor da sentença que passamos no find.
+	   */
 	// Método que recebe um linha e o parametro que queremos o valor, retorna o valor do parametro informado.
 	// Usando expressões regulares para achar
 	public static String find(String text, String find) {

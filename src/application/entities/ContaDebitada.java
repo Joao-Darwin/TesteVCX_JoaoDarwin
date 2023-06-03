@@ -2,6 +2,13 @@ package application.entities;
 
 import java.util.Objects;
 
+/**
+* <h1>ContaDebitada</h1>
+* A classe conta debitada armazena informações extraídas do pdf relacionadas a conta, como nome, agencia e numero da conta
+* <p>
+*
+* @author  João darwin
+*/
 public class ContaDebitada {
 	
 	private String nome;

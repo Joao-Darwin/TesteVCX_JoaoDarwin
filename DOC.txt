@@ -1,0 +1,22 @@
+--------- DOCUMENTAÇÃO DO PROGRAMA ---------
+
+1. Objetivo
+2. Instalação
+3. Explicações
+
+1 - OBJETIVO
+
+O programa em si faz parte de uma teste para a vaga de desenvolvedor estagirário back-end Java. Foi proposto que eu criasse um programa para extratir informações de um arquivo em PDF. As informações incluiam: Identificação do Extrato, Dados da Conta Debitada, Dados do Pagamento e a Data em que a operação foi efetuada.
+
+O projeto foi desenvolvimento utilizando a linguagem Java, usei também a utilização da biblioteca Apache PDFBox para manipulação dos arquivos PDF.
+
+2 - INSTALAÇÃO
+
+2.1 - Requisitos Básicos
+	Java 17 - Lingueagem de Programação
+	Maven 5.10.0 - Gerênciador de Libs + Compilação
+
+2.2 - Instalação
+	1 - Em um terminal, navegue até a pasta onde possua o arquivo pom.xml
+	2 - mvn clean install (Instala os principais pacotes + compilação)
+	3 - mvn exec:java (Executa o programa)

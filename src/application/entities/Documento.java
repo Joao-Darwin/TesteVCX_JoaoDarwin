@@ -5,6 +5,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
 
+/**
+* <h1>Documento</h1>
+* Classe que representa o documento onde será colocadas as informações extraidas do PDF
+* Ele possui relacionamentos com a classes ContaDebitada e Pagamento
+* <p>
+*
+* @author  João darwin
+*/
 public class Documento {
 	
 	private String identificacaoExtrato;
@@ -17,7 +25,7 @@ public class Documento {
 	public Documento() {
 	}
 	
-	//No construtor eu já implemento uma máscara para a data da operação
+	// No caso da data da operação eu recebo uma string e converto para uma Date já passando uam máscara
 	public Documento(String identificacaoExtrato, ContaDebitada contaDebitada, Pagamento pagamento, String dataOperacao) {
 		this.identificacaoExtrato = identificacaoExtrato;
 		this.contaDebitada = contaDebitada;

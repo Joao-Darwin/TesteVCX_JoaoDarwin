@@ -2,6 +2,13 @@ package application.entities;
 
 import java.util.Objects;
 
+/**
+* <h1>Pagamento</h1>
+* A classe pagamento contem informações extraídas do PDF relacionadas ao pagamento, como código de barras, valor paga, e informações do pagador
+* <p>
+*
+* @author  João darwin
+*/
 public class Pagamento {
 	
 	private String codigoBarras;
