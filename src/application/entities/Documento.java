@@ -14,8 +14,11 @@ public class Documento {
 	
 	SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy"); 
 	
+	public Documento() {
+	}
+	
 	//No construtor eu já implemento uma máscara para a data da operação
-	public Documento(String identificacaoExtrato, ContaDebitada contaDebitada, Pagamento pagamento, Date dataOperacao) {
+	public Documento(String identificacaoExtrato, ContaDebitada contaDebitada, Pagamento pagamento, String dataOperacao) {
 		this.identificacaoExtrato = identificacaoExtrato;
 		this.contaDebitada = contaDebitada;
 		this.pagamento = pagamento;
@@ -54,8 +57,12 @@ public class Documento {
 		return dataOperacao;
 	}
 	
-	public void setDataOperacao(Date dataOperacao) {
-		this.dataOperacao = dataOperacao;
+	public void setDataOperacao(String dataOperacao) {
+		try {
+			this.dataOperacao = dateFormat.parse(dataOperacao);
+		} catch(ParseException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
