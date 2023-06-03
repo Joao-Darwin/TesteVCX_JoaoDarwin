@@ -2,7 +2,6 @@
 
 1. Objetivo
 2. Instalação
-3. Explicações
 
 1 - OBJETIVO
 
@@ -12,6 +11,8 @@ O projeto foi desenvolvimento utilizando a linguagem Java, usei também a utiliz
 
 2 - INSTALAÇÃO
 
+Repositório: https://github.com/Joao-Darwin/TesteVCX_JoaoDarwin
+
 2.1 - Requisitos Básicos
 	Java 17 - Lingueagem de Programação
 	Maven 5.10.0 - Gerênciador de Libs + Compilação
@@ -20,3 +21,5 @@ O projeto foi desenvolvimento utilizando a linguagem Java, usei também a utiliz
 	1 - Em um terminal, navegue até a pasta onde possua o arquivo pom.xml
 	2 - mvn clean install (Instala os principais pacotes + compilação)
 	3 - mvn exec:java (Executa o programa)
+	
+
