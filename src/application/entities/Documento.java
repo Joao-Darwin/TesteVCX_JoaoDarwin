@@ -66,6 +66,16 @@ public class Documento {
 	}
 
 	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("\nIdentificação do Extrato: " + identificacaoExtrato + "\n\n");
+		sb.append(contaDebitada.toString());
+		sb.append(pagamento.toString());
+		sb.append("Data da Operação: " + dateFormat.format(dataOperacao) + "\n");
+		return sb.toString();
+	}
+	
+	@Override
 	public int hashCode() {
 		return Objects.hash(identificacaoExtrato);
 	}

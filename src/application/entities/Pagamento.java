@@ -43,6 +43,15 @@ public class Pagamento {
 	}
 
 	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("Cod. de Barras: " + codigoBarras + "\n");
+		sb.append("Valor: " + String.format("%.2f", valor) + "\n");
+		sb.append("Info. Pagador: " + infoPagador + "\n\n");
+		return sb.toString();
+	}
+	
+	@Override
 	public int hashCode() {
 		return Objects.hash(codigoBarras);
 	}

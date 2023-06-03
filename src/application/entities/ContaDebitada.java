@@ -39,6 +39,15 @@ public class ContaDebitada {
 	}
 
 	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("Nome da Conta: " + nome + "\n");
+		sb.append("Agência: " + agencia + "\n");
+		sb.append("Conta: " + conta + "\n\n");
+		return sb.toString();
+	}
+	
+	@Override
 	public int hashCode() {
 		return Objects.hash(conta);
 	}
