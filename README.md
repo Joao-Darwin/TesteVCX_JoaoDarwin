@@ -17,11 +17,11 @@ O projeto foi desenvolvimento utilizando a linguagem Java, usei também a utiliz
 ## Como executar o projeto
 ### Clonar o repositório
 ```bash
-git clone https://github.com/Joao-Darwin/TesteVCX_JoaoDarwin.git LeitorDePDF_VCX_JoaoDarwin
+git clone https://github.com/Joao-Darwin/TesteVCX_JoaoDarwin.git TesteVCX_JoaoDarwin
 ```
 ### Entrar na pasta clonada
 ```bash
-cd LeitorDePDF_VCX_JoaoDarwin
+cd TesteVCX_JoaoDarwin
 ```
 ### Instalar depedências e buildar projeto
 ```bash
