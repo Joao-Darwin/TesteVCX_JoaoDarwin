@@ -10,8 +10,6 @@ import org.apache.pdfbox.text.PDFTextStripper;
 
 import application.entities.Documento;
 
-//import application.Utilitarios;
-
 public class Main {
 	public static void main(String[] args) throws IOException {
 		Scanner scanner = new Scanner(System.in);

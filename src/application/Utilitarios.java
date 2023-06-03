@@ -89,8 +89,6 @@ public class Utilitarios {
 	   * Ex: text == "Conta: xxxx Agencia: yyy" e find == "Conta:" o retorno deve ser "xxxx"
 	   * @return String, o valor retornado é o valor da sentença que passamos no find.
 	   */
-	// Método que recebe um linha e o parametro que queremos o valor, retorna o valor do parametro informado.
-	// Usando expressões regulares para achar
 	public static String find(String text, String find) {
 		String regex = null;
 		if(find.equals("Agência:")) {
